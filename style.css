@@ -1,0 +1,119 @@
+/* COLORS
+RGB 77, 150, 168
+
+*/
+
+body {
+    /* background-color: hsl(185, 75%, 39%); */
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #28283D;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.min-width-class {
+    min-width: 100%;
+}
+
+
+
+
+footer {
+    position: absolute;
+    top: 1587px;
+    left: 0px;
+    display: flex;
+    justify-content: stretch;
+}
+
+header {
+    position: absolute;
+    top: 80px;
+    left: 661px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 140px;
+}
+
+.image-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: -32px;
+    top: 169px;
+}
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-primary {
+    background: #4D96A9;
+    border-radius: 29px;
+    width: 193px;
+    height: 58px;
+    top: 16px;
+    left: 29px;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    line-height: 26px;
+    border: 0px solid #4D96A9;
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+.second-btn-primary {
+    color: #8FE3F9;
+}
+
+.btn-primary:hover {
+    background: #71C0D4;
+}
+
+.btn-secondary {
+    background: #855FB1;
+    border-radius: 29px;
+    width: 193px;
+    height: 58px;
+    top: 16px;
+    left: 29px;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    line-height: 26px;
+    border: 0px solid #4D96A9;
+    text-align: center;
+}
+
+.second-btn-secondary {
+    color: #D9B8FF;
+}
+
+.btn-secondary:hover {
+    background-color: #B18BDD;
+    color: white;
+}
