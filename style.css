@@ -1,66 +1,210 @@
-/* COLORS
-RGB 77, 150, 168
+/* COLORS */
 
-*/
+.white-color {
+    color: #FAFAFA;
+}
 
-body {
-    /* background-color: hsl(185, 75%, 39%); */
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+.primary-color {
+    color: #4D96A9;
+}
+
+.secondary-color {
+    color: #855FB1;
+}
+
+.dark-blue-color {
     color: #28283D;
 }
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.grey-color {
+    color: #87879D;
+}
+
+.light-blue-color {
+    color: #8FE3F9;
+}
+
+.secondary-lighter {
+    color: #D9B8FF;
 }
 
 .min-width-class {
     min-width: 100%;
 }
 
-
-
-
-footer {
-    position: absolute;
-    top: 1587px;
-    left: 0px;
-    display: flex;
-    justify-content: stretch;
+.h1-class {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
 }
 
-header {
-    position: absolute;
-    top: 80px;
-    left: 661px;
+.h1-h2-header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.h2-class {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+}
+
+.all-caps-class {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.body-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-class {
+    height: 169px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex: 0 0 140px;
+    align-items: center;
 }
 
 .image-hero {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
-    left: -32px;
-    top: 169px;
 }
+
+.hero-left {
+    align-self: flex-start;
+    transform: translateX(-46px);
+}
+
+.hero-right {
+    align-self: flex-end;
+    transform: translateX(46px);
+}
+
 
 .hero-center {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    max-width: 540px;
+    text-align: center;
+}
+
+.hero-center-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.verticle-line {
+    align-self: center;
+    border-left: 1px solid rgba(135, 135, 157, 0.25);
+    height: 84px;
+}
+
+.circle-number {
+    align-self: center;
+    background: #FAFAFA;
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.number {
+    text-align: center;
+}
+
+.article-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.images-alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.meetings-images {
+    height: 242px;
+    border-radius: 9px;
+}
+
+.modern-use-class {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 540px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.footer-image {
+    background-image: url('assets/desktop/image-footer.jpg');
+    box-shadow: inset 2000px 0 0 0 rgba(77, 150, 168, 0.9);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.footer-left {
+    width: 350px;
+}
+
+.footer-center {
+    width: 350px;
 }
 
 .btn-primary {
@@ -71,21 +215,8 @@ header {
     top: 16px;
     left: 29px;
     color: white;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    line-height: 26px;
     border: 0px solid #4D96A9;
     text-align: center;
-}
-
-h1 {
-    font-size: 16px;
-}
-
-.second-btn-primary {
-    color: #8FE3F9;
 }
 
 .btn-primary:hover {
@@ -100,11 +231,6 @@ h1 {
     top: 16px;
     left: 29px;
     color: white;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: Red Hat Display;
-    font-style: normal;
-    line-height: 26px;
     border: 0px solid #4D96A9;
     text-align: center;
 }
