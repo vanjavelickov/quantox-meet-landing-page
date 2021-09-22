@@ -28,10 +28,6 @@
     color: #D9B8FF;
 }
 
-.min-width-class {
-    min-width: 100%;
-}
-
 .h1-class {
     font-size: 64px;
     font-weight: 900;
@@ -64,6 +60,10 @@
     line-height: 26px;
 }
 
+.transformY-class {
+    transform: translateY(50%);
+}
+
 body {
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
@@ -71,59 +71,59 @@ body {
     font-size: 18px;
     line-height: 26px;
     background-color: #FAFAFA;
-    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-}
-
-.article-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .header-class {
-    height: 169px;
+    margin-top: 80px;
+    margin-bottom: 61px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .image-hero {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 358px;
+    align-items: center;
+    margin-top: 61px;
 }
 
 .hero-left {
+    margin-left: -32px;
     align-self: flex-start;
-    transform: translateX(-46px);
 }
 
 .hero-right {
     align-self: flex-end;
-    transform: translateX(46px);
+    margin-right: -32px;
 }
 
 
 .hero-center {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 540px;
+    justify-content: space-between;
+    align-self: flex-end;
     text-align: center;
+    flex-grow: 2;
+    flex: 0 1 540px;
+    gap: 34px;
 }
+
 
 .hero-center-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -140,8 +140,6 @@ body {
     height: 56px;
     border: 1px solid rgba(135, 135, 157, 0.25);
     border-radius: 50%;
-    padding: 10px;
-
 }
 
 .number {
@@ -151,7 +149,7 @@ body {
 .article-two {
     display: flex;
     flex-direction: column;
-    align-items: center
+    justify-content: center;
 }
 
 .images-alignment {
@@ -159,6 +157,7 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
+    margin-top: 64px;
 }
 
 .meetings-images {
@@ -167,24 +166,35 @@ body {
 }
 
 .modern-use-class {
+    align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    width: 540px;
+    justify-content: space-between;
+    margin-top: 80px;
+    text-align: center;
+    max-width: 573px;
 }
 
-.text-center {
-    text-align: center;
+.modern-use-top {
+    align-self: center;
+}
+
+.modern-use-middle {
+    align-self: center;
+    margin-top: 16px;
+}
+
+.modern-use-bottom {
+    align-self: center;
+    margin-top: 32px;
 }
 
 .footer-image {
     background-image: url('assets/desktop/image-footer.jpg');
-    box-shadow: inset 2000px 0 0 0 rgba(77, 150, 168, 0.9);
+    box-shadow: inset 3000px 0 0 0 rgba(77, 150, 168, 0.9);
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 308px;
     display: flex;
     flex-direction: column;
@@ -195,25 +205,25 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-
+    margin-left: 165px;
+    margin-right: 165px;
 }
 
 .footer-left {
-    width: 350px;
+    max-width: 350px;
 }
 
 .footer-center {
-    width: 350px;
+    max-width: 350px;
 }
 
 .btn-primary {
     background: #4D96A9;
     border-radius: 29px;
-    width: 193px;
-    height: 58px;
-    top: 16px;
-    left: 29px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+    padding-right: 35px;
     color: white;
     border: 0px solid #4D96A9;
     text-align: center;
@@ -226,10 +236,10 @@ body {
 .btn-secondary {
     background: #855FB1;
     border-radius: 29px;
-    width: 193px;
-    height: 58px;
-    top: 16px;
-    left: 29px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+    padding-right: 35px;
     color: white;
     border: 0px solid #4D96A9;
     text-align: center;
@@ -242,4 +252,44 @@ body {
 .btn-secondary:hover {
     background-color: #B18BDD;
     color: white;
+}
+
+@media only screen and (max-width: 1263px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .image-hero {
+        justify-content: center;
+        padding: 0;
+        min-width: 303px;
+
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-center {
+        align-self: center;
+        order: 2;
+
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    body {
+        background-color: violet;
+    }
+
+    .header-class {
+        margin-top: 48px;
+    }
+
+
+    .hero-center {
+        justify-content: space-between;
+    }
 }
