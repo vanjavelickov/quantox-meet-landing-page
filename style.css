@@ -73,12 +73,14 @@ body {
     background-color: #FAFAFA;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .header-class {
@@ -98,6 +100,7 @@ body {
     margin-top: 61px;
 }
 
+
 .hero-left {
     margin-left: -32px;
     align-self: flex-start;
@@ -116,7 +119,7 @@ body {
     align-self: flex-end;
     text-align: center;
     flex-grow: 2;
-    flex: 0 1 540px;
+    flex: 0 1 33.3%;
     gap: 34px;
 }
 
@@ -156,7 +159,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 64px;
 }
 
@@ -191,30 +195,28 @@ body {
 
 .footer-image {
     background-image: url('assets/desktop/image-footer.jpg');
-    box-shadow: inset 3000px 0 0 0 rgba(77, 150, 168, 0.9);
+    box-shadow: inset 1440px 308px rgba(77, 150, 168, 0.9);
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 308px;
+    flex: 0 1 308px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-left: 165px;
-    margin-right: 165px;
 }
 
 .footer-left {
+    align-self: center;
     max-width: 350px;
 }
 
 .footer-center {
+    align-self: center;
     max-width: 350px;
+}
+
+.footer-right {
+
+    align-self: center;
 }
 
 .btn-primary {
@@ -227,6 +229,7 @@ body {
     color: white;
     border: 0px solid #4D96A9;
     text-align: center;
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -238,11 +241,12 @@ body {
     border-radius: 29px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 29px;
-    padding-right: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: white;
     border: 0px solid #4D96A9;
     text-align: center;
+    white-space: nowrap;
 }
 
 .second-btn-secondary {
@@ -252,6 +256,10 @@ body {
 .btn-secondary:hover {
     background-color: #B18BDD;
     color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 1263px) {
@@ -267,16 +275,32 @@ body {
     }
 
     img {
-        width: auto;
-        max-width: 100%;
         height: auto;
     }
 
+    .hero-left {
+        width: 50%;
+    }
+
+
+    .hero-right {
+        width: 50%;
+    }
+
     .hero-center {
+        margin-top: 15px;
         align-self: center;
         order: 2;
-
     }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -292,4 +316,27 @@ body {
     .hero-center {
         justify-content: space-between;
     }
+
+    .footer-image {
+        padding-top: 92px;
+        padding-bottom: 66px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-device-width: 414px) {
+    body {
+        background-color: orange;
+    }
+
+    .images-alignment {
+        gap: 11px;
+    }
+
+    .meetings-images {
+        height: 151px;
+    }
+
 }
