@@ -264,7 +264,7 @@ body {
 
 @media only screen and (max-width: 1263px) {
     .hero-image {
-        justify-content: center;
+        justify-content: space-around;
         padding: 0;
         min-width: 303px;
         flex-wrap: wrap;
